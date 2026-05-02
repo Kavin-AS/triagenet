@@ -1,0 +1,7 @@
+cycle_index,discharge_capacity_ah,charge_capacity_ah,nominal_capacity_ah,manufacturer,temperature_c_mean,c_rate_charge,c_rate_discharge
+1,1.08,1.09,1.10,A123,25,0.5,1.0
+2,1.06,1.07,1.10,A123,25,0.5,1.0
+3,1.04,1.05,1.10,A123,25,0.5,1.0
+4,1.02,1.03,1.10,A123,25,0.5,1.0
+5,1.00,1.01,1.10,A123,25,0.5,1.0
+

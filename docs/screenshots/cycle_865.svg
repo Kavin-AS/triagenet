@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <rect width="1200" height="760" fill="#020617"/>
+  <text x="40" y="44" fill="#f8fafc" font-family="system-ui" font-size="26" font-weight="700">TriageNet</text>
+  <rect x="410" y="92" width="750" height="145" rx="10" fill="#422006" stroke="#fbbf24"/>
+  <text x="444" y="137" fill="#94a3b8" font-family="system-ui" font-size="13" font-weight="700">VERDICT</text>
+  <text x="444" y="188" fill="#f8fafc" font-family="system-ui" font-size="40" font-weight="800">? More characterization</text>
+  <text x="878" y="150" fill="#fde68a" font-family="system-ui" font-size="14">LOW CONFIDENCE</text>
+  <text x="444" y="218" fill="#e2e8f0" font-family="system-ui" font-size="15">Likely LFP (96%), SOH 0.94 [0.76, 1.05]. VOI for one more cycle $0.30.</text>
+  <rect x="410" y="257" width="750" height="138" rx="10" fill="#0f172a" stroke="#1e293b"/>
+  <text x="444" y="296" fill="#94a3b8" font-family="system-ui" font-size="13" font-weight="700">CHEMISTRY</text>
+  <rect x="444" y="325" width="620" height="18" rx="9" fill="#1e293b"/>
+  <rect x="444" y="325" width="595" height="18" rx="9" fill="#34d399"/>
+  <text x="444" y="370" fill="#cbd5e1" font-family="system-ui" font-size="15">LFP 96% · LCO 4%</text>
+  <rect x="410" y="415" width="750" height="138" rx="10" fill="#0f172a" stroke="#1e293b"/>
+  <text x="444" y="454" fill="#94a3b8" font-family="system-ui" font-size="13" font-weight="700">STATE OF HEALTH</text>
+  <rect x="444" y="485" width="620" height="28" rx="14" fill="#020617" stroke="#334155"/>
+  <rect x="912" y="485" width="152" height="28" fill="#38bdf833"/>
+  <rect x="1025" y="478" width="3" height="42" fill="#34d399"/>
+  <line x1="940" y1="474" x2="940" y2="526" stroke="#fbbf24"/>
+  <text x="444" y="535" fill="#cbd5e1" font-family="system-ui" font-size="15">Mean 94% · 90% interval 76-105% · threshold crossed</text>
+  <rect x="410" y="573" width="750" height="118" rx="10" fill="#0f172a" stroke="#1e293b"/>
+  <text x="444" y="612" fill="#94a3b8" font-family="system-ui" font-size="13" font-weight="700">ECONOMICS</text>
+  <text x="444" y="653" fill="#e2e8f0" font-family="system-ui" font-size="19">Second-life EV $22.17 · Recycle EV $-0.20 · More data worth $0.30</text>
+</svg>

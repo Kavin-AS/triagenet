@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="430" viewBox="0 0 1120 430" role="img" aria-label="TriageNet architecture diagram">
+  <rect width="1120" height="430" fill="#020617"/>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+  <style>
+    .box{fill:#0f172a;stroke:#334155;stroke-width:2;rx:10}
+    .green{stroke:#34d399}
+    .amber{stroke:#fbbf24}
+    .text{fill:#f1f5f9;font:600 18px system-ui}
+    .small{fill:#94a3b8;font:13px system-ui}
+    .arrow{stroke:#38bdf8;stroke-width:3;fill:none;marker-end:url(#arrow)}
+  </style>
+  <rect class="box" x="40" y="160" width="150" height="80"/>
+  <text class="text" x="72" y="194">Raw cycle</text>
+  <text class="small" x="72" y="216">CSV / Parquet</text>
+  <path class="arrow" d="M190 200 H260"/>
+  <rect class="box" x="260" y="150" width="170" height="100"/>
+  <text class="text" x="300" y="190">Featurizer</text>
+  <text class="small" x="292" y="215">shape + dQ/dV</text>
+  <path class="arrow" d="M430 190 H515"/>
+  <path class="arrow" d="M430 220 H515"/>
+  <rect class="box green" x="515" y="105" width="210" height="80"/>
+  <text class="text" x="555" y="140">Chemistry</text>
+  <text class="small" x="560" y="162">calibrated probs</text>
+  <rect class="box green" x="515" y="220" width="210" height="80"/>
+  <text class="text" x="565" y="255">SOH</text>
+  <text class="small" x="555" y="277">mean + interval</text>
+  <path class="arrow" d="M725 145 C780 145 780 205 830 205"/>
+  <path class="arrow" d="M725 260 C780 260 780 225 830 225"/>
+  <rect class="box amber" x="830" y="165" width="190" height="95"/>
+  <text class="text" x="870" y="202">Triage engine</text>
+  <text class="small" x="873" y="226">EV + VOI logic</text>
+  <path class="arrow" d="M925 340 V260"/>
+  <rect class="box" x="805" y="330" width="240" height="60"/>
+  <text class="text" x="845" y="366">Commodity prices</text>
+  <path class="arrow" d="M1020 212 H1080"/>
+  <text class="text" x="1045" y="188">API</text>
+  <text class="small" x="1030" y="235">dashboard</text>
+</svg>

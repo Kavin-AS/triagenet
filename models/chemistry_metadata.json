@@ -1,0 +1,585 @@
+{
+  "trained_at_utc": "2026-04-30T17:14:51.787147+00:00",
+  "active_feature_set": "shape",
+  "soh_window": [
+    0.8,
+    1.0
+  ],
+  "cycles_per_cell_cap": 30,
+  "cycle_cap_reason": "Deterministic per-cell SOH-stratified cap prevents long-lived cells from dominating correlated cycle-level training rows.",
+  "feature_names": [
+    "feat_shape_v_norm_at_25pct_capacity",
+    "feat_shape_v_norm_at_50pct_capacity",
+    "feat_shape_v_norm_at_75pct_capacity",
+    "feat_shape_plateau_flatness_normalized",
+    "feat_shape_dqdv_peak_v_norm_1",
+    "feat_shape_dqdv_peak_v_norm_2",
+    "feat_shape_dqdv_peak_separation_norm",
+    "feat_shape_curve_skewness",
+    "feat_shape_curve_kurtosis",
+    "feat_shape_curve_inflection_position",
+    "feat_shape_avg_slope_first_half",
+    "feat_coulombic_efficiency",
+    "feat_charge_to_discharge_ratio",
+    "feat_dqdv_peak_magnitude_1",
+    "feat_dqdv_peak_magnitude_2",
+    "feat_dqdv_n_significant_peaks",
+    "feat_c_rate_charge",
+    "feat_c_rate_discharge"
+  ],
+  "active_feature_names": [
+    "feat_shape_v_norm_at_25pct_capacity",
+    "feat_shape_v_norm_at_50pct_capacity",
+    "feat_shape_v_norm_at_75pct_capacity",
+    "feat_shape_plateau_flatness_normalized",
+    "feat_shape_dqdv_peak_v_norm_1",
+    "feat_shape_dqdv_peak_v_norm_2",
+    "feat_shape_dqdv_peak_separation_norm",
+    "feat_shape_curve_skewness",
+    "feat_shape_curve_kurtosis",
+    "feat_shape_curve_inflection_position",
+    "feat_shape_avg_slope_first_half",
+    "feat_coulombic_efficiency",
+    "feat_charge_to_discharge_ratio",
+    "feat_dqdv_peak_magnitude_1",
+    "feat_dqdv_peak_magnitude_2",
+    "feat_dqdv_n_significant_peaks",
+    "feat_c_rate_charge",
+    "feat_c_rate_discharge"
+  ],
+  "deprecated_voltage_axis_feature_names": [
+    "feat_coulombic_efficiency",
+    "feat_charge_to_discharge_ratio",
+    "feat_voltage_mean",
+    "feat_voltage_std",
+    "feat_voltage_at_50pct_capacity",
+    "feat_voltage_at_80pct_capacity",
+    "feat_voltage_at_20pct_capacity",
+    "feat_plateau_flatness",
+    "feat_initial_voltage_drop",
+    "feat_final_voltage",
+    "feat_dqdv_peak_voltage_1",
+    "feat_dqdv_peak_magnitude_1",
+    "feat_dqdv_peak_voltage_2",
+    "feat_dqdv_peak_magnitude_2",
+    "feat_dqdv_n_significant_peaks",
+    "feat_c_rate_charge",
+    "feat_c_rate_discharge",
+    "feat_temperature_mean",
+    "feat_voltage_range"
+  ],
+  "class_labels": [
+    "LCO",
+    "LFP"
+  ],
+  "training_cell_ids": [
+    "calce_cs2_33",
+    "calce_cs2_34",
+    "calce_cs2_35",
+    "calce_cs2_36",
+    "calce_cs2_37",
+    "calce_cs2_38",
+    "calce_cx2_33",
+    "calce_cx2_34",
+    "calce_cx2_35",
+    "calce_cx2_36",
+    "calce_cx2_37",
+    "calce_cx2_38",
+    "mit_b1c0",
+    "mit_b1c1",
+    "mit_b1c11",
+    "mit_b1c14",
+    "mit_b1c15",
+    "mit_b1c16",
+    "mit_b1c17",
+    "mit_b1c18",
+    "mit_b1c19",
+    "mit_b1c2",
+    "mit_b1c20",
+    "mit_b1c21",
+    "mit_b1c23",
+    "mit_b1c24",
+    "mit_b1c25",
+    "mit_b1c26",
+    "mit_b1c27",
+    "mit_b1c28",
+    "mit_b1c29",
+    "mit_b1c3",
+    "mit_b1c30",
+    "mit_b1c31",
+    "mit_b1c32",
+    "mit_b1c33",
+    "mit_b1c34",
+    "mit_b1c35",
+    "mit_b1c36",
+    "mit_b1c37",
+    "mit_b1c38",
+    "mit_b1c39",
+    "mit_b1c4",
+    "mit_b1c40",
+    "mit_b1c41",
+    "mit_b1c42",
+    "mit_b1c43",
+    "mit_b1c44",
+    "mit_b1c45",
+    "mit_b1c5",
+    "mit_b1c6",
+    "mit_b1c7",
+    "mit_b1c9"
+  ],
+  "metrics": {
+    "active": {
+      "leave_one_cell_out": {
+        "status": "ok",
+        "n_folds": 5,
+        "mean_accuracy": 0.9987878787878788,
+        "std_accuracy": 0.00242424242424244,
+        "mean_balanced_accuracy": 0.9992592592592592,
+        "std_balanced_accuracy": 0.0014814814814815057,
+        "mean_macro_f1": 0.997988908525809,
+        "std_macro_f1": 0.0040221829483820136,
+        "mean_roc_auc": 1.0,
+        "std_roc_auc": 0.0,
+        "folds": [
+          {
+            "fold": 1,
+            "status": "ok",
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "macro_f1": 1.0,
+            "roc_auc": 1.0
+          },
+          {
+            "fold": 2,
+            "status": "ok",
+            "accuracy": 0.9939393939393939,
+            "balanced_accuracy": 0.9962962962962962,
+            "macro_f1": 0.989944542629045,
+            "roc_auc": 1.0
+          },
+          {
+            "fold": 3,
+            "status": "ok",
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "macro_f1": 1.0,
+            "roc_auc": 1.0
+          },
+          {
+            "fold": 4,
+            "status": "ok",
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "macro_f1": 1.0,
+            "roc_auc": 1.0
+          },
+          {
+            "fold": 5,
+            "status": "ok",
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "macro_f1": 1.0,
+            "roc_auc": 1.0
+          }
+        ]
+      },
+      "leave_one_dataset_out": {
+        "status": "untrainable",
+        "folds": [
+          {
+            "fold": 1,
+            "status": "untrainable_single_class_train",
+            "train_classes": [
+              "LFP"
+            ],
+            "test_classes": [
+              "LCO"
+            ]
+          },
+          {
+            "fold": 2,
+            "status": "untrainable_single_class_train",
+            "train_classes": [
+              "LCO"
+            ],
+            "test_classes": [
+              "LFP"
+            ]
+          }
+        ]
+      },
+      "without_soh_window_leave_one_cell_out": {
+        "status": "ok",
+        "n_folds": 5,
+        "mean_accuracy": 0.9987272727272728,
+        "std_accuracy": 0.001561708936572738,
+        "mean_balanced_accuracy": 0.999212962962963,
+        "std_balanced_accuracy": 0.0009666950471213275,
+        "mean_macro_f1": 0.9979528104138359,
+        "std_macro_f1": 0.0025075541847868477,
+        "mean_roc_auc": 0.9994506172839506,
+        "std_roc_auc": 0.0010987654320987696,
+        "folds": [
+          {
+            "fold": 1,
+            "status": "ok",
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "macro_f1": 1.0,
+            "roc_auc": 1.0
+          },
+          {
+            "fold": 2,
+            "status": "ok",
+            "accuracy": 0.996969696969697,
+            "balanced_accuracy": 0.9981481481481482,
+            "macro_f1": 0.9949401248102547,
+            "roc_auc": 0.9972530864197531
+          },
+          {
+            "fold": 3,
+            "status": "ok",
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "macro_f1": 1.0,
+            "roc_auc": 1.0
+          },
+          {
+            "fold": 4,
+            "status": "ok",
+            "accuracy": 0.9966666666666667,
+            "balanced_accuracy": 0.9979166666666667,
+            "macro_f1": 0.9948239272589244,
+            "roc_auc": 1.0
+          },
+          {
+            "fold": 5,
+            "status": "ok",
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "macro_f1": 1.0,
+            "roc_auc": 1.0
+          }
+        ]
+      }
+    },
+    "shape": {
+      "leave_one_cell_out": {
+        "status": "ok",
+        "n_folds": 5,
+        "mean_accuracy": 0.9987878787878788,
+        "std_accuracy": 0.00242424242424244,
+        "mean_balanced_accuracy": 0.9992592592592592,
+        "std_balanced_accuracy": 0.0014814814814815057,
+        "mean_macro_f1": 0.997988908525809,
+        "std_macro_f1": 0.0040221829483820136,
+        "mean_roc_auc": 1.0,
+        "std_roc_auc": 0.0,
+        "folds": [
+          {
+            "fold": 1,
+            "status": "ok",
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "macro_f1": 1.0,
+            "roc_auc": 1.0
+          },
+          {
+            "fold": 2,
+            "status": "ok",
+            "accuracy": 0.9939393939393939,
+            "balanced_accuracy": 0.9962962962962962,
+            "macro_f1": 0.989944542629045,
+            "roc_auc": 1.0
+          },
+          {
+            "fold": 3,
+            "status": "ok",
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "macro_f1": 1.0,
+            "roc_auc": 1.0
+          },
+          {
+            "fold": 4,
+            "status": "ok",
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "macro_f1": 1.0,
+            "roc_auc": 1.0
+          },
+          {
+            "fold": 5,
+            "status": "ok",
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "macro_f1": 1.0,
+            "roc_auc": 1.0
+          }
+        ]
+      },
+      "leave_one_dataset_out": {
+        "status": "untrainable",
+        "folds": [
+          {
+            "fold": 1,
+            "status": "untrainable_single_class_train",
+            "train_classes": [
+              "LFP"
+            ],
+            "test_classes": [
+              "LCO"
+            ]
+          },
+          {
+            "fold": 2,
+            "status": "untrainable_single_class_train",
+            "train_classes": [
+              "LCO"
+            ],
+            "test_classes": [
+              "LFP"
+            ]
+          }
+        ]
+      },
+      "without_soh_window_leave_one_cell_out": {
+        "status": "ok",
+        "n_folds": 5,
+        "mean_accuracy": 0.9987272727272728,
+        "std_accuracy": 0.001561708936572738,
+        "mean_balanced_accuracy": 0.999212962962963,
+        "std_balanced_accuracy": 0.0009666950471213275,
+        "mean_macro_f1": 0.9979528104138359,
+        "std_macro_f1": 0.0025075541847868477,
+        "mean_roc_auc": 0.9994506172839506,
+        "std_roc_auc": 0.0010987654320987696,
+        "folds": [
+          {
+            "fold": 1,
+            "status": "ok",
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "macro_f1": 1.0,
+            "roc_auc": 1.0
+          },
+          {
+            "fold": 2,
+            "status": "ok",
+            "accuracy": 0.996969696969697,
+            "balanced_accuracy": 0.9981481481481482,
+            "macro_f1": 0.9949401248102547,
+            "roc_auc": 0.9972530864197531
+          },
+          {
+            "fold": 3,
+            "status": "ok",
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "macro_f1": 1.0,
+            "roc_auc": 1.0
+          },
+          {
+            "fold": 4,
+            "status": "ok",
+            "accuracy": 0.9966666666666667,
+            "balanced_accuracy": 0.9979166666666667,
+            "macro_f1": 0.9948239272589244,
+            "roc_auc": 1.0
+          },
+          {
+            "fold": 5,
+            "status": "ok",
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "macro_f1": 1.0,
+            "roc_auc": 1.0
+          }
+        ]
+      }
+    },
+    "voltage_axis": {
+      "leave_one_cell_out": {
+        "status": "ok",
+        "n_folds": 5,
+        "mean_accuracy": 0.9987878787878788,
+        "std_accuracy": 0.00242424242424244,
+        "mean_balanced_accuracy": 0.9992592592592592,
+        "std_balanced_accuracy": 0.0014814814814815057,
+        "mean_macro_f1": 0.997988908525809,
+        "std_macro_f1": 0.0040221829483820136,
+        "mean_roc_auc": 1.0,
+        "std_roc_auc": 0.0,
+        "folds": [
+          {
+            "fold": 1,
+            "status": "ok",
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "macro_f1": 1.0,
+            "roc_auc": 1.0
+          },
+          {
+            "fold": 2,
+            "status": "ok",
+            "accuracy": 0.9939393939393939,
+            "balanced_accuracy": 0.9962962962962962,
+            "macro_f1": 0.989944542629045,
+            "roc_auc": 1.0
+          },
+          {
+            "fold": 3,
+            "status": "ok",
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "macro_f1": 1.0,
+            "roc_auc": 1.0
+          },
+          {
+            "fold": 4,
+            "status": "ok",
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "macro_f1": 1.0,
+            "roc_auc": 1.0
+          },
+          {
+            "fold": 5,
+            "status": "ok",
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "macro_f1": 1.0,
+            "roc_auc": 1.0
+          }
+        ]
+      },
+      "leave_one_dataset_out": {
+        "status": "untrainable",
+        "folds": [
+          {
+            "fold": 1,
+            "status": "untrainable_single_class_train",
+            "train_classes": [
+              "LFP"
+            ],
+            "test_classes": [
+              "LCO"
+            ]
+          },
+          {
+            "fold": 2,
+            "status": "untrainable_single_class_train",
+            "train_classes": [
+              "LCO"
+            ],
+            "test_classes": [
+              "LFP"
+            ]
+          }
+        ]
+      },
+      "without_soh_window_leave_one_cell_out": {
+        "status": "ok",
+        "n_folds": 5,
+        "mean_accuracy": 0.9993333333333332,
+        "std_accuracy": 0.0013333333333333196,
+        "mean_balanced_accuracy": 0.9995833333333334,
+        "std_balanced_accuracy": 0.0008333333333333305,
+        "mean_macro_f1": 0.9989647854517848,
+        "std_macro_f1": 0.002070429096430226,
+        "mean_roc_auc": 1.0,
+        "std_roc_auc": 0.0,
+        "folds": [
+          {
+            "fold": 1,
+            "status": "ok",
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "macro_f1": 1.0,
+            "roc_auc": 1.0
+          },
+          {
+            "fold": 2,
+            "status": "ok",
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "macro_f1": 1.0,
+            "roc_auc": 1.0
+          },
+          {
+            "fold": 3,
+            "status": "ok",
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "macro_f1": 1.0,
+            "roc_auc": 1.0
+          },
+          {
+            "fold": 4,
+            "status": "ok",
+            "accuracy": 0.9966666666666667,
+            "balanced_accuracy": 0.9979166666666667,
+            "macro_f1": 0.9948239272589244,
+            "roc_auc": 1.0
+          },
+          {
+            "fold": 5,
+            "status": "ok",
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "macro_f1": 1.0,
+            "roc_auc": 1.0
+          }
+        ]
+      }
+    }
+  },
+  "dataset_hashes": {
+    "cycles_parquet_sha256": "a0c84a94af226df7a34dea21eb8f82a1e418d8dbfed71f37b35b14bbf6f893cd"
+  },
+  "versions": {
+    "sklearn": "1.4.2",
+    "xgboost": "2.0.3"
+  },
+  "feature_importances": {
+    "feat_shape_v_norm_at_25pct_capacity": 0.0,
+    "feat_shape_v_norm_at_50pct_capacity": 0.0,
+    "feat_shape_v_norm_at_75pct_capacity": 0.20183121661345163,
+    "feat_shape_plateau_flatness_normalized": 0.2527166505654653,
+    "feat_shape_dqdv_peak_v_norm_1": 0.0,
+    "feat_shape_dqdv_peak_v_norm_2": 0.0,
+    "feat_shape_dqdv_peak_separation_norm": 0.0,
+    "feat_shape_curve_skewness": 0.005380733559528987,
+    "feat_shape_curve_kurtosis": 0.2557675540447235,
+    "feat_shape_curve_inflection_position": 0.0,
+    "feat_shape_avg_slope_first_half": 0.0,
+    "feat_coulombic_efficiency": 0.0,
+    "feat_charge_to_discharge_ratio": 0.0,
+    "feat_dqdv_peak_magnitude_1": 0.0,
+    "feat_dqdv_peak_magnitude_2": 0.0,
+    "feat_dqdv_n_significant_peaks": 0.0,
+    "feat_c_rate_charge": 0.2751426299413045,
+    "feat_c_rate_discharge": 0.009161219000816345
+  },
+  "voltage_axis_feature_importances": {
+    "feat_coulombic_efficiency": 0.0,
+    "feat_charge_to_discharge_ratio": 0.0,
+    "feat_voltage_mean": 0.2758607616027196,
+    "feat_voltage_std": 0.22834333777427673,
+    "feat_voltage_at_50pct_capacity": 0.02604544659455617,
+    "feat_voltage_at_80pct_capacity": 0.11360178515315056,
+    "feat_voltage_at_20pct_capacity": 0.14339730640252432,
+    "feat_plateau_flatness": 0.2127513885498047,
+    "feat_initial_voltage_drop": 0.0,
+    "feat_final_voltage": 0.0,
+    "feat_dqdv_peak_voltage_1": 0.0,
+    "feat_dqdv_peak_magnitude_1": 0.0,
+    "feat_dqdv_peak_voltage_2": 0.0,
+    "feat_dqdv_peak_magnitude_2": 0.0,
+    "feat_dqdv_n_significant_peaks": 0.0,
+    "feat_c_rate_charge": 0.0,
+    "feat_c_rate_discharge": 0.0,
+    "feat_temperature_mean": 0.0,
+    "feat_voltage_range": 0.0
+  }
+}

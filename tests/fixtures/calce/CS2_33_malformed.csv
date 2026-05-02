@@ -1,0 +1,5 @@
+cell_id,cycle_index,time_s,voltage_v,current_a,temperature_c
+CS2_BAD,1,0,3.0,1.0,25
+CS2_BAD,1,1800,4.1,1.0,25
+CS2_BAD,1,3600,,,-25
+
